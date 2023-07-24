@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+  <div id="everything">
+    <div id="container">
+      <div id="age_inputs">
+        
+        <form id="form">  
+          <div id="input_form">
+            <div class="input_box">
+              <label for="day_input" id="day_label">DAY</label>
+              <input type="text" name="day" id="day_input" placeholder="DD">
+              <span id="day_error" class="error_text"></span>
+            </div>
+    
+            <div class="input_box">
+              <label for="month_input" id="month_label">MONTH</label>
+              <input type="text" name="month" id="month_input" placeholder="MM" >
+              <span id="month_error" class="error_text"></span>
+            </div>
+    
+            <div class="input_box">
+              <label for="year_input" id="year_label">YEAR</label>
+              <input type="text" name="year" id="year_input" placeholder="YYYY">
+              <span id="year_error" class="error_text"></span>
+            </div>
+          </div>
+          
+          <div id="button_layout">
+            <hr>
+            <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="Down_num"></button>
+          </div>
+          
+  
+        </form>
+      </div>
+  
+      <div id="results">
+        <div class="result_section">
+          <span id="result_year" class="output">-- </span> years
+        </div>
+  
+        <div class="result_section">
+          <span id="result_month" class="output">-- </span> months
+        </div>
+  
+        <div class="result_section">
+          <span id="result_day" class="output">-- </span> days
+        </div>
+      </div>
+  
+    </div>
+  
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/sebsours">Sebastian Morales</a>.
+    </div>
+  </div>
+  
+</body>
+<script src="./scripts/ageHandler.js"></script>
+</html>
